@@ -1,0 +1,940 @@
+/*-----------------------------------------------------------*/
+/*-------------- Общие стили для всех устройств -------------*/
+/*-----------------------------------------------------------*/
+
+body {
+	background-color: #0496c5; /* Голубой */
+	margin: 0 0 0 0;
+	width: 100%;
+	min-height: 100%;
+}
+
+.content {
+	
+}
+
+.center {
+    text-align: center;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.padding_left {
+	padding: 5px 0 0 30px;
+}
+
+#show-settings-logout {
+	display: none;
+}
+
+#show-settings-login {
+	display: none;
+}
+
+.main-content-different p {
+	text-indent: 25px;
+}
+
+.close_window {
+	text-align: right;
+}
+
+#contactsFormResponse {
+	text-align: center;
+	font-weight: bold;
+}
+
+.center_bold {
+	text-align: center;
+	font-weight: bold;
+}
+
+button:focus, input:focus {
+	outline: none;
+}
+
+.button-basic:hover, .login-button:hover {
+    background-color: #fc6d93;   /*Светло - розовый*/
+}
+
+.button-basic:active, .login-button:active {
+    background-color: #d62454;   /*Темно - розовый*/
+}
+
+.button-basic-blue:hover {
+	background-color: #5d82f0; /* Светло - синий */
+}
+
+.button-basic-blue:active {
+	background-color: #2350d9;  /* Темно - синий */
+}
+
+.button-settings:hover {
+	border-radius: 0;
+}
+
+.button-settings:active {
+	border-radius: 0;
+}
+
+/*-----------------------------------------------------------*/
+/*-Стили для ПК и ноутбуков с шириной экрана более 1200------*/
+/*-----------------------------------------------------------*/
+
+@media screen and (min-device-width: 1200px) {
+    
+
+
+#main-content {
+	position: relative;
+	background: #f5537d; /* Розовый */
+	height: auto;
+	min-height: 150px;
+	color: #000;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.main-content-different {
+	position: relative;
+	background: #f5537d; /* Розовый */
+	height: auto;
+	min-height: 150px;
+	color: #000;
+	margin: 0 10px 0 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.button-basic-block {
+	width: 300px;
+	margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+}
+
+.login-button {
+	background-color: #f5537d; /*Розовый*/
+	border: none;
+	width: 80px;
+	height: 25px;
+	border-radius: 12px;
+	text-align: center;
+    text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.authorization_button_img {
+    width: 16px;
+    vertical-align: middle;
+}
+
+.captcha {
+	width: 180px;
+	height: 60px;
+}
+
+#favorites-button-block-add {
+	position: absolute;
+	padding: 1px 10px 5px 1px;
+	right: 0;
+	text-align: right;
+	bottom: 0;
+	display: none;
+}
+
+#favorites-button-block-delete {
+	position: absolute;
+	padding: 1px 10px 5px 1px;
+	right: 0;
+	text-align: right;
+	bottom: 0;
+	display: none;
+}
+
+#favorites-button-block-loading {
+	position: absolute;
+	padding: 1px 10px 5px 1px;
+	right: 0;
+	text-align: right;
+	bottom: 0;
+	display: none;
+}
+
+.favorites-button {
+	background-color: #EE82EE; /*Фиолетовый*/
+	border: none;
+	border-radius: 12px;
+	text-align: center;
+    text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.favorites-button-img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+#button-basic-block_logout {
+	width: 300px;
+	margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+	display: block;
+}
+
+#button-basic-block_logon {
+	width: 300px;
+	margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+	display: none;
+}
+
+.button-settings {
+	width: 45px;
+	height: 45px;
+	border-radius: 14px;
+}
+
+.button-basic {
+	width: 250px;
+	height: 40px;
+    background-color: #f5537d;   /*Розовый*/
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+
+
+.button-basic-blue {
+	background-color: #4169E1; /* Синий */
+	width: 180px;
+	height: 50px;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.button-settings-ok {
+    background-color: #4169E1;
+	width: 100px;
+	height: 40px;
+	border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+	border-radius: 12px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.input-style {
+	border-radius: 8px;
+	width: 200px;
+	height: 25px;
+	font-size: 18px;
+	padding: 0 0 0 10px;
+	margin: 5px 0;
+}
+
+.input-textarea-style {
+	border-radius: 8px;
+	width: 400px;
+	height: 200px;
+	font-size: 18px;
+	resize: none;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.checkbox-settings-style {
+	border-radius: 10px;
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+}
+
+#settings {
+	background: #f5537d; /* Розовый */
+	color: #000;
+	margin: 10px 10px 10px 10px;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	display: none;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+#start_window {
+	background: #0496c5; /* Голубой */
+	color: #000;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+}
+
+#mission_window {
+	color: #000;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	display: none;
+}
+
+#insert_response {
+	background: #f5537d; /* Розовый */
+}
+
+#authorization_window, #registration_window, #registration_done_window {
+	background: #f5537d; /* Розовый */
+	width: 250px;
+	color: #000;
+	margin: 0 auto;
+	padding: 5px 5px 10px 5px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	display: none;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+#about_registration_window {
+	background: #f5537d; /* Розовый */
+	height: auto;
+	color: #000;
+	margin: 20px 10px 0 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+	display: none;
+}
+
+#authorization_window span {
+	font-size: 16px;
+}
+
+#registration_window span {
+	font-size: 14px;
+	line-height: 5%;
+}
+
+#authorization_window a {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 16px;
+	color: #6e0b58; /* Темно-фиолетовый (ссылки) */
+}
+
+#registration_window {
+	display: none;
+}
+
+.close_icon {                         /*----- Иконка "Закрыть окно" -------*/
+	height: 25px;
+	width: 25px;
+}
+
+/*---------- Все окна контента (настройки, контент, кнопки) --------------*/
+#all_window {
+	display: block;
+}
+/*---------- Стили блока Header и main menu --------------*/
+#main_menu {
+	display: inline-block;
+	min-width: 96%;
+	margin: 0 10px 0 10px;
+}
+
+#header_settings {
+	float: left;
+}
+
+#header_autorization {
+	float: right;
+	height: 100%;
+	padding: 1px 1px 1px 1px;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#header_autorization_logout {
+	font-size: 16px;
+	display: block;
+}
+
+#header_autorization_logon {
+	font-size: 16px;
+	display: none;
+}
+
+.tip_icon {
+	height: 17px;
+	width: 17px;
+}
+
+.reload_icon {
+	height: 30px;
+	width: 30px;
+	margin: auto;
+	cursor: pointer;
+}
+
+
+
+/*-------------- БЛОК HEADER (ЛОГОТИП И TITLE) ---------------*/
+.header {
+	min-width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+	display: inline-block;
+	clear: both;
+}
+
+#logo {
+	height: 50px;
+	background-image:url(img/header_background.jpg);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-color: Black;
+	padding: 10px 0 0 10px;
+}
+
+#logo_img {
+	float: left;
+	width: 250px;
+}
+
+.main_logo {       /*--- Размер изображений логотипа сайта---*/
+    height: 30px;
+    cursor: pointer;
+}
+
+#logo_title {
+	float: left;
+	width: 450px;
+	font-family: "Times New Roman";
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18px;
+	color: #FFE4E1;
+	text-align: center;
+	padding: 10px 0 10px 30px;
+}
+
+
+
+.img_mission_div {
+	text-align: center;
+	padding: 10px 0 5px 0;
+}
+
+.image_mission {
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	border: none;
+	border-radius: 10px;
+}
+
+/*--- ПОДВАЛ САЙТА (FOOTER) ---*/
+.pagewrap {
+	width: 100%;
+	min-height: calc(100vh - 70px);
+}
+
+.footer {
+	font-size: 14px;
+	color: #a682ed;  /* Цвет ссылок футера - бледно-серый */
+	background: #4c4854; /* Темно-серый */
+	padding: 10px 0 0 10px;
+	height: 60px;   /* При изменениии высота футера, обязательно изменить строку min-height: calc(100vh - 70px) в .pagewrap, где 70px - высота футера+10px отступа в padding */
+}
+
+.footer a {
+	color: #a682ed;
+}
+
+}
+
+
+/*-------------- АДАПТАЦИЯ HEADER ПОД РАЗРЕШЕНИЕ ЭКРАНА МЕНЬШЕ 800PX ---------------*/
+@media screen and (max-width: 800px) {
+	#logo_title {
+		display: none;
+	}
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-Стили для мобильных устройств с шириной экрана менее 1200-*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+
+
+@media screen and (max-device-width: 1200px) {
+
+
+/*----------- БЛОК ВЫВОДА ЗАДАНИЙ И КНОПОК УПРАВЛЕНИЯ ИМИ (ОСНОВНОЙ БЛОК) --------------*/
+#mission_window {
+	margin: 0 auto;
+	padding: 10px;
+	text-decoration: none;
+	display: none;
+}
+
+#main-content {
+	position: relative;
+	background: #f5537d; /* Розовый */
+	height: auto;
+	min-height: 400px;
+	color: #000;
+	margin: 0 auto;
+	border-radius: 20px;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 25px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+#show-mission-block {
+}
+
+#favorites-button-block-add { 
+	position: absolute;
+	padding: 1px 10px 5px 1px;
+	right: 0;
+	text-align: right;
+	bottom: 0;
+	display: none;
+}
+
+#favorites-button-block-delete { 
+	position: absolute;
+	padding: 1px 10px 5px 1px;
+	right: 0;
+	text-align: right;
+	bottom: 0;
+	display: none;
+}
+
+#favorites-button-block-loading { 
+	position: absolute;
+	padding: 1px 10px 5px 1px;
+	right: 0;
+	text-align: right;
+	bottom: 0;
+	display: none;
+}
+
+.favorites-button {                  /*--- Кнопка "Добавить / Удалить в избранное" ---*/
+	background-color: #EE82EE; /*Фиолетовый*/
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+    text-decoration: none;
+	font-size: 44px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.favorites-button-img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.button-basic-block {             /*-------- Кнопка "Начать" и пр. на стартовой странице --------*/
+    margin: 0 auto;
+	text-align:center;
+}
+
+#button-basic-block_logout {      /*-- Кнопки управления заданиями (пропустить, следующее и т.д.). Пользователь не авторизован --------*/
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	display: block;
+}
+
+#button-basic-block_logon {       /*-- Кнопки управления заданиями (пропустить, следующее и т.д.). Пользователь авторизован --------*/
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	display: none;
+}
+
+
+/*----------- КОНТЕНТ НА ВСПОМОГАТЕЛЬНЫХ СТРАНИЦАХ (КОНТАКТЫ, О НАС) --------------*/
+.main-content-different {
+	position: relative;
+	background: #f5537d; /* Розовый */
+	height: auto;
+	min-height: 150px;
+	color: #000;
+	margin: 0 10px 0 10px;
+	border-radius: 20px;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.button-basic {
+	width: 550px;
+	height: 140px;
+    background-color: #f5537d;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 18px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.button-basic-blue {
+	background-color: #4169E1;
+	min-width: 550px;
+	height: 140px;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.button-settings-ok {
+    background-color: #4169E1;
+	width: 300px;
+	height: 120px;
+	border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+	border-radius: 12px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.input-style {
+	border-radius: 20px;
+	width: 650px;
+	height: 100px;
+	font-size: 50px;
+	padding: 0 0 0 20px;
+	margin: 10px 0 20px 0;
+}
+
+.input-textarea-style {  /*-----!-------*/
+	border-radius: 8px;
+	width: 400px;
+	height: 200px;
+	font-size: 18px;
+	resize: none;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+.checkbox-settings-style {
+	border-radius: 10px;
+	width: 60px;
+	height: 60px;
+	font-size: 18px;
+}
+
+#settings {
+	background: #f5537d; /* Розовый */
+	color: #000;
+	margin: 10px 10px 10px 10px;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 50px;
+	text-decoration: none;
+	display: none;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+#start_window {
+	background: #0496c5; /* Голубой */
+	color: #000;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+}
+
+#insert_response {
+	background: #f5537d; /* Розовый */
+}
+
+/*--- ОКНА АВТОРИЗАЦИИ, РЕГИСТРАЦИИ И ВСЕ С НИМИ СВЯЗАННОЕ --- */
+
+#authorization_window, #registration_window, #registration_done_window {
+	background: #f5537d; /* Розовый */
+	width: 80%;
+	color: #000;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+	font-size: 50px;
+	text-decoration: none;
+	display: none;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+
+#about_registration_window {            /*--- Блок "Что дает регистрация" ---*/
+	background: #f5537d; /* Розовый */
+	height: auto;
+	color: #000;
+	margin: 20px 25px;
+	border-radius: 10px;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 10px 10px 10px 30px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+	display: none;
+}
+
+#authorization_window span {
+	font-size: 36px;
+}
+
+#registration_window span {
+	font-size: 36px;
+}
+
+#authorization_window a {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 44px;
+	color: #6e0b58;   /*-- Темно-фиолетовый (ссылки) --*/
+}
+
+#registration_window {
+	display: none;
+}
+
+.captcha {                  /*--- Размеры капчи ---*/
+	width: 480px;
+	height: 180px;
+	margin: 10px;
+}
+
+.reload_icon {               /*--- Иконка "Обновить капчу" ---*/
+	height: 120px;
+	width: 120px;
+	margin: auto;
+	cursor: pointer;
+}
+
+/*---------- Все окна контента (настройки, контент, кнопки) --------------*/
+#all_window {
+	display: block;
+}
+
+/*---------------- БЛОК ГЛАВНОГО МЕНЮ (ГОРИЗОНТАЛЬНОГО) -----------------*/
+#main_menu {
+	display: inline-block;
+	min-width: 96%;
+	margin: 0 10px 0 10px;
+}
+
+#header_settings {
+	float: left;
+}
+
+.button-settings {         /*----- Кнопка (иконка) "Настройки" -------*/
+	width: 130px;
+	height: 130px;
+	border-radius: 20px;
+}
+
+#header_autorization {
+	float: right;
+	height: 100%;
+	padding: 1px 1px 1px 1px;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.login-button {
+	background-color: #f5537d; /*Розовый*/
+	border: none;
+	width: 200px;
+	height: 130px;
+	margin: 0 0 0 20px;
+	border-radius: 24px;
+	text-align: center;
+    text-decoration: none;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.authorization_button_img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+#header_autorization_logout {
+	font-size: 16px;
+	display: block;
+}
+
+#header_autorization_logon {
+	font-size: 44px;
+	color: #FFF;
+	display: none;
+}
+
+
+/*------------ РАЗНОЕ --------------*/
+.tip_icon {                           /*----- Иконка подсказки "Знак вопроса" -------*/
+	height: 50px;
+	width: 50px;
+}
+
+.close_icon {                         /*----- Иконка "Закрыть окно" -------*/
+	height: 70px;
+	width: 70px;
+}
+
+
+/*-------------- БЛОК HEADER (ЛОГОТИП И TITLE) ---------------*/
+.header {
+	min-width: 100%;
+	height: 110px;
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+	display: inline-block;
+	clear: both;
+}
+
+#logo {           /*----- Контейнер div, в котором находятся логотип и подпись к нему -------*/
+	height: 100px;
+	background-image:url(img/header_background.jpg);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-color: Black;
+}
+
+#logo_img {       /*----- Контейнер, в котором находятся оба изображения логотипа -------*/
+	float: left;
+	width: 500px;
+	padding: 20px 0 0 10px;
+}
+
+.main_logo {       /*--- Размер изображений логотипа сайта ---*/
+    height: 60px;
+    cursor: pointer;
+}
+
+#logo_title {     /*--- Подпись про количество заданий, рядом с логотипом ---*/
+	display: none;
+}
+
+
+
+
+/*----- ОФОРМЛЕНИЕ ИЗОБРАЖЕНИЙ К ЗАДАНИЯМ (ПОЗЫ) -------*/
+.img_mission_div {                      /*--- Блок для вывода изображения ---*/
+	text-align: center;
+	padding: 10px 0 5px 0;
+}
+
+.image_mission {                        /*--- Изображение задания (поза) ---*/
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+	border: none;
+	border-radius: 20px;
+}
+
+/*------------------------- ПОДВАЛ САЙТА (FOOTER) --------------------------*/
+.pagewrap {
+	width: 100%;
+	min-height: calc(100vh - 170px);
+}
+
+.footer {
+	font-size: 40px;
+	color: #a682ed;  /* Цвет ссылок футера - бледно-серый */
+	background: #4c4854; /* Темно-серый */
+	padding: 10px 0 0 10px;
+	height: 160px;   /* При изменениии высота футера, обязательно изменить строку min-height: calc(100vh - 70px) в .pagewrap, где 70px - высота футера+10px отступа в padding */
+}
+
+.footer a {
+	color: #a682ed;
+}
+
+
+}
